@@ -7,6 +7,7 @@ use App\Http\Controllers\WmProjectController;
 use App\Http\Controllers\TrMasukController;
 use App\Http\Controllers\TrKeluarToroController;
 use App\Http\Controllers\ThemeController;
+use App\Http\Controllers\SkorController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -23,5 +24,5 @@ Route::apiResources([
     'tr-masuk' => TrMasukController::class,
     'tr-keluar-toro' => TrKeluarToroController::class,
     'theme' => ThemeController::class,
-
+    'skors' => SkorController::class,
 ]);
