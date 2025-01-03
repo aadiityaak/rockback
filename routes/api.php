@@ -4,6 +4,7 @@ use App\Http\Controllers\PaketController;
 use App\Http\Controllers\CutiController;
 use App\Http\Controllers\WebhostController;
 use App\Http\Controllers\WmProjectController;
+use App\Http\Controllers\TransaksiMasukController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,5 +16,6 @@ Route::apiResources([
     'paket' => PaketController::class,
     'cuti' => CutiController::class,
     'webhost' => WebhostController::class,
-    'wmproject' => WmProjectController::class
+    'wmproject' => WmProjectController::class,
+    'transaksi-masuk' => TransaksiMasukController::class
 ]);
