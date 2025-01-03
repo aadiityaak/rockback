@@ -6,6 +6,8 @@ use App\Http\Controllers\WebhostController;
 use App\Http\Controllers\WmProjectController;
 use App\Http\Controllers\TrMasukController;
 use App\Http\Controllers\TrKeluarToroController;
+use App\Http\Controllers\ThemeController;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,4 +22,6 @@ Route::apiResources([
     'wmproject' => WmProjectController::class,
     'tr-masuk' => TrMasukController::class,
     'tr-keluar-toro' => TrKeluarToroController::class,
+    'theme' => ThemeController::class,
+
 ]);
