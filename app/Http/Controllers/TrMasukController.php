@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\TransaksiMasuk;
+use App\Models\TrMasuk;
 use Illuminate\Http\Request;
 
-class TransaksiMasukController extends Controller
+class TrMasukController extends Controller
 {
   public function index()
   {
-    $transaksiMasuk = TransaksiMasuk::all();
+    $transaksiMasuk = TrMasuk::all();
     return response()->json($transaksiMasuk);
   }
 
   public function show($id)
   {
-    $transaksi = TransaksiMasuk::find($id);
+    $transaksi = TrMasuk::find($id);
     if (!$transaksi) {
       return response()->json(['message' => 'Transaksi not found'], 404);
     }
@@ -32,13 +32,13 @@ class TransaksiMasukController extends Controller
       'pelunasan' => 'nullable|in:Y,N',
     ]);
 
-    $transaksi = TransaksiMasuk::create($request->all());
+    $transaksi = TrMasuk::create($request->all());
     return response()->json($transaksi, 201);
   }
 
   public function update(Request $request, $id)
   {
-    $transaksi = TransaksiMasuk::find($id);
+    $transaksi = TrMasuk::find($id);
     if (!$transaksi) {
       return response()->json(['message' => 'Transaksi not found'], 404);
     }
@@ -57,7 +57,7 @@ class TransaksiMasukController extends Controller
 
   public function destroy($id)
   {
-    $transaksi = TransaksiMasuk::find($id);
+    $transaksi = TrMasuk::find($id);
     if (!$transaksi) {
       return response()->json(['message' => 'Transaksi not found'], 404);
     }
