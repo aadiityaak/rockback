@@ -9,7 +9,7 @@ class CutiController extends Controller
 {
   public function index(Request $request)
   {
-    $query = Paket::query();
+    $query = Cuti::query();
     $query->orderBy('id', 'desc');
     $cutis = $query->paginate(25);
     return response()->json($cutis);
