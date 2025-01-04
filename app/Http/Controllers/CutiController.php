@@ -7,9 +7,11 @@ use Illuminate\Http\Request;
 
 class CutiController extends Controller
 {
-  public function index()
+  public function index(Request $request)
   {
-    $cutis = Cuti::all();
+    $query = Paket::query();
+    $query->orderBy('id', 'desc');
+    $cutis = $query->paginate(25);
     return response()->json($cutis);
   }
 
