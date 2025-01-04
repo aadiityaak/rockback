@@ -7,9 +7,11 @@ use Illuminate\Http\Request;
 
 class PaketController extends Controller
 {
-  public function index()
+  public function index(Request $request)
   {
-    $pakets = Paket::all();
+    $query = Paket::query();
+    $query->orderBy('id_paket', 'desc');
+    $pakets = $query->paginate(25);
     return response()->json($pakets);
   }
 
