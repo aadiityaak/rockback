@@ -8,6 +8,7 @@ use App\Http\Controllers\TrMasukController;
 use App\Http\Controllers\TrKeluarToroController;
 use App\Http\Controllers\ThemeController;
 use App\Http\Controllers\SkorController;
+use App\Http\Controllers\ServerController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -25,4 +26,5 @@ Route::apiResources([
     'tr-keluar-toro' => TrKeluarToroController::class,
     'theme' => ThemeController::class,
     'skors' => SkorController::class,
+    'servers' => ServerController::class,
 ]);
