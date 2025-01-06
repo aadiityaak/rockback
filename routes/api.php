@@ -10,7 +10,7 @@ use App\Http\Controllers\ThemeController;
 use App\Http\Controllers\SkorController;
 use App\Http\Controllers\ServerController;
 use App\Http\Controllers\SaldoBankController;
-
+use App\Http\Controllers\RingkasanController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -30,5 +30,6 @@ Route::apiResources([
     'skors' => SkorController::class,
     'servers' => ServerController::class,
     'servers' => ServerController::class,
-    'saldo-bank' => SaldoBankController::class
+    'saldo-bank' => SaldoBankController::class,
+    'ringkasan' => RingkasanController::class
 ]);
