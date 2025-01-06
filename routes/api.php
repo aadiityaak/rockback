@@ -14,6 +14,7 @@ use App\Http\Controllers\RingkasanController;
 use App\Http\Controllers\RekapChatController;
 use App\Http\Controllers\QualityController;
 use App\Http\Controllers\PmProjectController;
+use App\Http\Controllers\PembaruanController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -37,5 +38,6 @@ Route::apiResources([
     'ringkasan' => RingkasanController::class,
     'rekap-chat' => RekapChatController::class,
     'quality' => QualityController::class,
-    'pm-project' => PmProjectController::class
+    'pm-project' => PmProjectController::class,
+    'pembaruan' => PembaruanController::class
 ]);
