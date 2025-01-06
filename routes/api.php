@@ -23,6 +23,7 @@ use App\Http\Controllers\KeywordController;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\JurnalController;
 use App\Http\Controllers\IklanController;
+use App\Http\Controllers\HargaDomainController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -55,5 +56,6 @@ Route::apiResources([
     'keyword' => KeywordController::class,
     'karyawan' => KaryawanController::class,
     'jurnal' => JurnalController::class,
-    'iklan' => IklanController::class
+    'iklan' => IklanController::class,
+    'harga-domain' => HargaDomainController::class
 ]);
