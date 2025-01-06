@@ -16,6 +16,7 @@ use App\Http\Controllers\QualityController;
 use App\Http\Controllers\PmProjectController;
 use App\Http\Controllers\PembaruanController;
 use App\Http\Controllers\KonversiWa5Controller;
+use App\Http\Controllers\KonversiOrganikController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -41,5 +42,6 @@ Route::apiResources([
     'quality' => QualityController::class,
     'pm-project' => PmProjectController::class,
     'pembaruan' => PembaruanController::class,
-    'konversi-wa5' => KonversiWa5Controller::class
+    'konversi-wa5' => KonversiWa5Controller::class,
+    'konversi-organik' => KonversiOrganikController::class
 ]);
