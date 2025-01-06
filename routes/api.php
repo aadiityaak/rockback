@@ -11,6 +11,7 @@ use App\Http\Controllers\SkorController;
 use App\Http\Controllers\ServerController;
 use App\Http\Controllers\SaldoBankController;
 use App\Http\Controllers\RingkasanController;
+use App\Http\Controllers\RekapChatController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -31,5 +32,6 @@ Route::apiResources([
     'servers' => ServerController::class,
     'servers' => ServerController::class,
     'saldo-bank' => SaldoBankController::class,
-    'ringkasan' => RingkasanController::class
+    'ringkasan' => RingkasanController::class,
+    'rekap-chat' => RekapChatController::class
 ]);
