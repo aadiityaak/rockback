@@ -9,6 +9,8 @@ use App\Http\Controllers\TrKeluarToroController;
 use App\Http\Controllers\ThemeController;
 use App\Http\Controllers\SkorController;
 use App\Http\Controllers\ServerController;
+use App\Http\Controllers\SaldoBankController;
+
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -27,4 +29,6 @@ Route::apiResources([
     'theme' => ThemeController::class,
     'skors' => SkorController::class,
     'servers' => ServerController::class,
+    'servers' => ServerController::class,
+    'saldo-bank' => SaldoBankController::class
 ]);
