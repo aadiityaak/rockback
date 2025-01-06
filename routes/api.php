@@ -18,6 +18,7 @@ use App\Http\Controllers\PembaruanController;
 use App\Http\Controllers\KonversiWa5Controller;
 use App\Http\Controllers\KonversiOrganikController;
 use App\Http\Controllers\KonversiDisplayController;
+use App\Http\Controllers\KonversiController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -45,5 +46,6 @@ Route::apiResources([
     'pembaruan' => PembaruanController::class,
     'konversi-wa5' => KonversiWa5Controller::class,
     'konversi-organik' => KonversiOrganikController::class,
-    'konversi-display' => KonversiDisplayController::class
+    'konversi-display' => KonversiDisplayController::class,
+    'konversi' => KonversiController::class
 ]);
