@@ -19,6 +19,7 @@ use App\Http\Controllers\KonversiWa5Controller;
 use App\Http\Controllers\KonversiOrganikController;
 use App\Http\Controllers\KonversiDisplayController;
 use App\Http\Controllers\KonversiController;
+use App\Http\Controllers\KeywordController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -47,5 +48,6 @@ Route::apiResources([
     'konversi-wa5' => KonversiWa5Controller::class,
     'konversi-organik' => KonversiOrganikController::class,
     'konversi-display' => KonversiDisplayController::class,
-    'konversi' => KonversiController::class
+    'konversi' => KonversiController::class,
+    'keyword' => KeywordController::class
 ]);
